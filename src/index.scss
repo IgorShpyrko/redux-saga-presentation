@@ -1,0 +1,26 @@
+a {
+  display: inline-block;
+  margin: 3px 5px;
+  padding: 3px 7px;
+  border-radius: 3px;
+  background-color: #EEE;
+  color: black;
+
+  &:hover {
+    background-color: #999;
+    color: white;
+  }
+
+  &:active {
+    color: #333;
+  }
+}
+
+a.active {
+  background-color: #999;
+}
+
+main {
+  width: 70%;
+  margin: auto;
+}

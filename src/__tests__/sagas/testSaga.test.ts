@@ -1,6 +1,6 @@
 import { delay } from 'redux-saga/effects';
 
-import testSaga from '../testSaga';
+import testSaga from '../../store/sagas/testSaga';
 
 let gen: any;
 

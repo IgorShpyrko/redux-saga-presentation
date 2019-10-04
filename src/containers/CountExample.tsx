@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import Counter from 'src/components/Counter';
 import { useDispatch, useMappedState } from 'redux-react-hook';
 import { constants } from 'src/store/constants';
@@ -7,7 +7,7 @@ import { ISagaAction } from 'src/store/types';
 const CountExample: React.FC = () => {
   const dispatch = useDispatch();
 
-  const mapState = React.useCallback(
+  const mapState = useCallback(
     state => ({
       count: state.count.value,
     }),
@@ -21,7 +21,8 @@ const CountExample: React.FC = () => {
   );
 
   return (
-    <>
+    <article>
+      <h3>Simple Saga count</h3>
       <Counter
         value={count}
         onIncrement={() => action(constants.INCREMENT)}
@@ -29,7 +30,7 @@ const CountExample: React.FC = () => {
         onIncrementAsync={() => action(constants.INCREMENT_ASYNC)}
         onDecrementAsync={() => action(constants.DECREMENT_ASYNC)}
       />
-    </>
+    </article>
   );
 };
 

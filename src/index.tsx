@@ -5,12 +5,13 @@ import { BrowserRouter } from 'react-router-dom';
 
 import { store } from './store';
 import App from './App';
+import './index.scss';
 
 ReactDOM.render(
   (
     <StoreContext.Provider value={store}>
       <BrowserRouter>
-        <App/>
+        <App />
       </BrowserRouter>
     </StoreContext.Provider>
   ),

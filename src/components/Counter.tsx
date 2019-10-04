@@ -17,15 +17,15 @@ const Counter:React.FC<IProps> = ({
 }) => (
   <>
     {/* Sync actions */}
-    <button onClick={onIncrement}>Increment</button>
-    <span>{' '}</span>
     <button onClick={onDecrement}>Decrement</button>
+    <span>{' '}</span>
+    <button onClick={onIncrement}>Increment</button>
     <hr />
 
     {/* Async actions */}
-    <button onClick={onIncrementAsync}>Increment Async</button>
-    <span>{' '}</span>
     <button onClick={onDecrementAsync}>Decrement Async</button>
+    <span>{' '}</span>
+    <button onClick={onIncrementAsync}>Increment Async</button>
     <hr />
 
     {/* Result */}
