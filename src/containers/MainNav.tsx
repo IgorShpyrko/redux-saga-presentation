@@ -11,6 +11,8 @@ const MainNav: React.FC<IProps> = () => {
     <nav>
       <h2>Main Nav</h2>
       <NavLink exact={true} to='/'>Home</NavLink>
+      <NavLink to='/generators'>Generators</NavLink>
+      <NavLink to='/analogs'>Analogs</NavLink>
       <NavLink to='/count'>Count</NavLink>
       <NavLink to='/take'>Take</NavLink>
       <NavLink to='/fork'>Fork</NavLink>
@@ -18,6 +20,7 @@ const MainNav: React.FC<IProps> = () => {
       <NavLink to='/put'>Put</NavLink>
       <NavLink to='/select'>Select</NavLink>
       <NavLink to='/throttle'>Throttle</NavLink>
+      <NavLink to='/use'>Use casses</NavLink>
       <NavLink to='/test'>Test</NavLink>
     </nav>
   );

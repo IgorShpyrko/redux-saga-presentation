@@ -11,6 +11,9 @@ import HomeComponent from 'src/containers/Home';
 import ForkComponent from 'src/containers/Fork';
 import TestComponent from 'src/containers/Test';
 import ThrottleComponent from 'src/containers/Throttle';
+import Generators from 'src/containers/Generators';
+import Analogs from 'src/containers/Analogs';
+import UseCases from 'src/containers/UseCases';
 
 interface IProps extends RouteComponentProps {}
 
@@ -20,11 +23,14 @@ const App: React.FC<IProps> = () => {
       <MainNav />
       <Switch>
         <Route exact={true} path='/' component={HomeComponent} />
+        <Route path='/generators' component={Generators} />
+        <Route path='/analogs' component={Analogs} />
         <Route path='/count' component={CountExample} />
         <Route path='/take' component={TakeComponent} />
         <Route path='/fork' component={ForkComponent} />
         <Route path='/select' component={Select} />
         <Route path='/throttle' component={ThrottleComponent} />
+        <Route path='/use' component={UseCases} />
         <Route path='/test' component={TestComponent} />
       </Switch>
       <ToastContainer />
