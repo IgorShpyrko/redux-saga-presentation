@@ -11,6 +11,7 @@ const MainNav: React.FC<IProps> = () => {
     <nav>
       <h2>Main Nav</h2>
       <NavLink exact={true} to='/'>Home</NavLink>
+      <NavLink to='/iterators'>Iterators</NavLink>
       <NavLink to='/generators'>Generators</NavLink>
       <NavLink to='/analogs'>Analogs</NavLink>
       <NavLink to='/count'>Count</NavLink>

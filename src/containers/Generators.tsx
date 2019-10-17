@@ -3,7 +3,7 @@ import React from 'react';
 const Generators = () => {
   return (
     <article>
-      Generators
+      <h3>Generators</h3>
 
       What is?
 

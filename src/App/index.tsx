@@ -14,6 +14,7 @@ import ThrottleComponent from 'src/containers/Throttle';
 import Generators from 'src/containers/Generators';
 import Analogs from 'src/containers/Analogs';
 import UseCases from 'src/containers/UseCases';
+import Iterators from 'src/containers/Iterators';
 
 interface IProps extends RouteComponentProps {}
 
@@ -23,6 +24,7 @@ const App: React.FC<IProps> = () => {
       <MainNav />
       <Switch>
         <Route exact={true} path='/' component={HomeComponent} />
+        <Route path='/iterators' component={Iterators} />
         <Route path='/generators' component={Generators} />
         <Route path='/analogs' component={Analogs} />
         <Route path='/count' component={CountExample} />
