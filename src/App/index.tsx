@@ -6,15 +6,16 @@ import 'react-toastify/dist/ReactToastify.css';
 import CountExample from 'src/containers/CountExample';
 import Select from 'src/containers/Select';
 import MainNav from 'src/containers/MainNav';
+import Iterators from 'src/containers/Iterators';
+import Generators from 'src/containers/Generators';
+import AboutSaga from 'src/containers/AboutSaga';
+import Analogs from 'src/containers/Analogs';
+import UseCases from 'src/containers/UseCases';
 import TakeComponent from 'src/containers/Take';
 import HomeComponent from 'src/containers/Home';
 import ForkComponent from 'src/containers/Fork';
 import TestComponent from 'src/containers/Test';
 import ThrottleComponent from 'src/containers/Throttle';
-import Generators from 'src/containers/Generators';
-import Analogs from 'src/containers/Analogs';
-import UseCases from 'src/containers/UseCases';
-import Iterators from 'src/containers/Iterators';
 
 interface IProps extends RouteComponentProps {}
 
@@ -26,6 +27,7 @@ const App: React.FC<IProps> = () => {
         <Route exact={true} path='/' component={HomeComponent} />
         <Route path='/iterators' component={Iterators} />
         <Route path='/generators' component={Generators} />
+        <Route path='/about' component={AboutSaga} />
         <Route path='/analogs' component={Analogs} />
         <Route path='/count' component={CountExample} />
         <Route path='/take' component={TakeComponent} />

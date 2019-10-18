@@ -2,17 +2,14 @@ import React from 'react';
 import { RouteComponentProps, withRouter } from 'react-router';
 import { NavLink } from 'react-router-dom';
 
-interface IProps extends RouteComponentProps {
-
-}
-
-const MainNav: React.FC<IProps> = () => {
+const MainNav: React.FC<RouteComponentProps> = () => {
   return (
     <nav>
       <h2>Main Nav</h2>
       <NavLink exact={true} to='/'>Home</NavLink>
       <NavLink to='/iterators'>Iterators</NavLink>
       <NavLink to='/generators'>Generators</NavLink>
+      <NavLink to='/about'>About Saga</NavLink>
       <NavLink to='/analogs'>Analogs</NavLink>
       <NavLink to='/count'>Count</NavLink>
       <NavLink to='/take'>Take</NavLink>

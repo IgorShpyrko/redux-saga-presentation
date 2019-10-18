@@ -13,6 +13,9 @@ class IterableObject implements IterableInterface {
       this[i] = obj[i];
     });
   }
+
+  // мы можем указать метод итерации как для класса, так и для его прототипа
+  // [Symbol.iterator] = () => { ...
 }
 
 IterableObject.prototype[Symbol.iterator] = function () {
